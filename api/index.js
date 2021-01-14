@@ -9,4 +9,16 @@ app.get('/api', (req, res) => {
     })
 })
 
+app.get('/test', (req, res) => {
+    res.json({
+        message: 'Hello from Test'
+    })
+})
+
+app.get('/api/test', (req, res) => {
+    res.json({
+        message: 'Hello from api/test'
+    })
+})
+
 module.exports = app
